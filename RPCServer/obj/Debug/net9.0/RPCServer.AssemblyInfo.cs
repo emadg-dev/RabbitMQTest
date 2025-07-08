@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPCServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ab6ab87c8765ce651014c1aaf74814ab9d553af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bb98a0044ef373c608515b62a41ff8d84317995")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPCServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPCServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

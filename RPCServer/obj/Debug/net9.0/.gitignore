@@ -1,0 +1,39 @@
+# Visual Studio / .NET Core build artifacts
+bin/
+obj/
+[Test]*/bin/
+[Test]*/obj/
+
+# VS Code settings
+.vscode/
+
+# Visual Studio temporary files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# ASP.NET Core files
+*.db
+appsettings*.json
+
+# Build logs
+*.log
+*.vspscc
+*.vssscc
+
+# NuGet
+*.nupkg
+# Local packages
+**/packages/
+# The packages folder can be ignored because of Package Restore
+**/node_modules/
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Dotnet core publish directory
+publish/
