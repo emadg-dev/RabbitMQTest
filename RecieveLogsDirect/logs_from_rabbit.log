@@ -1,0 +1,6 @@
+ [*] Waiting for messages.
+ Press [enter] to exit.
+ [x] Received 'error':'runtime error 2'
+ [x] Received 'warning':'warn Dont Skip indent'
+ [x] Received 'error':'runtime error 1'
+ [x] Received 'warning':'warn 1'
