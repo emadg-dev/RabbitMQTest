@@ -1,0 +1,30 @@
+﻿using RabbitMQ.Client;
+using System.Text;
+
+var factory = new ConnectionFactory { 
+    HostName = "192.168.106.121",
+    UserName = "user1",
+    Password = "user1"
+    };
+using var connection = await factory.CreateConnectionAsync();
+using var channel = await connection.CreateChannelAsync();
+
+await channel.QueueDeclareAsync(queue: "hello", durable: false, exclusive: false, autoDelete: false,
+    arguments: null);
+
+
+while(true)
+{
+    Console.WriteLine("Enter Message:");
+    var message = Console.ReadLine();
+    // const string message = "Hello World!";
+    var body = Encoding.UTF8.GetBytes(message);
+
+    await channel.BasicPublishAsync(exchange: string.Empty, routingKey: "hello", body: body);
+    Console.WriteLine($" [x] Sent {message}");
+
+}
+
+
+// Console.WriteLine(" Press [enter] to exit.");
+// Console.ReadLine();
